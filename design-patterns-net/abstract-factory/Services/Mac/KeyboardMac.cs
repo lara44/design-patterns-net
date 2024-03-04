@@ -2,7 +2,7 @@
 
 namespace abstract_factory.Services.Mac
 {
-    internal class KeyboardMac : IKeyboard
+    public class KeyboardMac : IKeyboard
     {
         public string loadKeyboard()
         {
