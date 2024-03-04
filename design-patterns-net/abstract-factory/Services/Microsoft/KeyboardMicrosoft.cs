@@ -2,7 +2,7 @@
 
 namespace abstract_factory.Services.Microsoft
 {
-    internal class KeyboardMicrosoft : IKeyboard
+    public class KeyboardMicrosoft : IKeyboard
     {
         public string loadKeyboard()
         {

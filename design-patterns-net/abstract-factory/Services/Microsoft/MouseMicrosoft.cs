@@ -6,7 +6,7 @@ namespace abstract_factory.Services.Microsoft
     {
         public string loadMouse()
         {
-            return "List of microsoft keyboards!";
+            return "List of microsoft mouses";
         }
     }
 }
