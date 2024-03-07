@@ -1,8 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 using pattern_builder.Builders;
 using pattern_builder.Services;
-
-Console.WriteLine("Hello, World!");
 
 Store store = new Store();
 ComputerBuilder BasicComputerBuilder = new BasicComputerBuilder();
