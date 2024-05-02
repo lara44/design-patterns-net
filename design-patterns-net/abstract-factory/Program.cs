@@ -13,3 +13,5 @@ Console.WriteLine();
 Console.WriteLine("Client: Testing client code with the factory Microsfot");
 var factoryMicrosoft = new ComponentsFactoryMicrosoft();
 client.ClientMethod(factoryMicrosoft);
+
+Console.ReadLine();

@@ -8,3 +8,5 @@ Console.WriteLine(config1.ToString());
 Config config2 = Config.GetInstance();
 Console.WriteLine(config2.ToString());
 
+Console.ReadLine();
+
