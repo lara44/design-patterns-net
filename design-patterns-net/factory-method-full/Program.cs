@@ -7,3 +7,5 @@ Console.WriteLine(orderDocument.ImprimirDocumento());
 
 var invoiceDocument = new InvoicePrinter();
 Console.WriteLine(invoiceDocument.ImprimirDocumento());
+
+Console.ReadLine();

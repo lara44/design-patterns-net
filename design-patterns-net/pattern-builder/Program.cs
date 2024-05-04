@@ -17,3 +17,5 @@ store.GamerComputerBuilder();
 computer = store.ObtenerComputadora();
 Console.WriteLine("\nComputadora Gamer:");
 computer.Show();
+
+Console.ReadLine();
