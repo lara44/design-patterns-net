@@ -1,21 +1,24 @@
 ﻿
-using pattern_strategy.Strategies;
+using pattern_observer.Observers;
+using pattern_observer.Subjects;
 
-// Estrategia de pago con Daviplata
-var daviplataStrategy = new DaviplataPaymentStrategy();
-var daviplataPaymentContext = new PaymentContext(daviplataStrategy);
-daviplataPaymentContext.ExecutePayment(100);
+public class Program
+{
+    static void Main(string[] args)
+    {
+        Invoice invoice1 = new Invoice("Invoice #FV0001", 1000m);
+        Customer customer1 = new Customer("juan@email.com");
+        invoice1.RegisterObserver(customer1);
+        invoice1.ProcessPayment();
+        invoice1.RemoveObserver(customer1);
 
-// Estrategia de pago con Nequi
-var nequiStrategy = new NequiPaymentStrategy();
-var nequiPaymentContext = new PaymentContext(nequiStrategy);
-nequiPaymentContext.ExecutePayment(200);
+        Invoice invoice2 = new Invoice("Invoice #FV0002", 2000m);
+        Customer customer2 = new Customer("pedro@email.com");
+        invoice2.RegisterObserver(customer2);
+        invoice2.ProcessPayment();
+        invoice2.RemoveObserver(customer2);
 
-// Estrategia de pago con Bancolombia
-var bancolombiaStrategy = new BancolombiaPaymentStrategy();
-var bancolombiaPaymentContext = new PaymentContext(bancolombiaStrategy);
-bancolombiaPaymentContext.ExecutePayment(300);
-
-Console.ReadLine();
-
+        Console.ReadLine();
+    }
+}
 
